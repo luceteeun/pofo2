@@ -1,0 +1,443 @@
+@media all and (max-width:1170px){
+  #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .caption {
+    h3 {font-size:1.538462vw;}
+    h2 {font-size:5.982906vw;}
+  }
+
+  #wrap #main #section2 .container .gap .wrap .content > ul > li .col-gap .col-wrap .top img {
+    filter: grayscale(0);
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+
+  #wrap #main #section6 .container .gap .wrap .content {
+    > ul {
+      flex-flow:row wrap;
+      > li {
+        width: 50%;
+        .col-gap {
+          margin:5px;
+        }
+      }
+    }
+  }
+
+  #wrap #main #section8 .container .gap .wrap .content > ul {
+    flex-flow:row wrap;
+    > li {
+      width: 100%;
+      &:nth-child(1) {
+        .img-box {
+          height:400px;
+        }
+      }
+      &:nth-child(2) {
+        ul {
+          li {
+            text-align:center;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+// 모바일에서 변화되는 네비메뉴바
+
+@media all and (max-width:991px){
+
+  #wrap #header .container .gap .wrap .mobile-btn-box {
+    display:block;
+  }
+
+  #wrap #header .container .gap .wrap #nav {
+    display:none;
+    align-items:flex-start;  // 위쪽 정렬하는 방법
+    background:rgba(0,0,0, 1);
+    width:100%;
+    height:100vh;  //창높이 꽉 채운다
+    position:absolute;
+    top:72px;
+    left:0;
+    overflow-y:auto;
+    > ul {
+      width:100%;
+      height:auto;
+      display:block;
+      > li {
+        height:auto;
+        margin:0;
+        border-bottom:1px solid #333;
+        > a.main-btn {
+          height:38px;
+          line-height:38px;
+          color:#fff;
+          padding:0 20px;
+        }
+        .sub.sub1356 {
+          display:none;
+          width:100%;
+          position:relative;
+          top:0;
+          left:0;
+          background:#232323;
+          .sub-gap {
+            padding:0 20px;
+            ul {
+              width:100%;
+              display:block;
+              li {
+                width:100%;
+                border-right:0;
+                dl {
+                  padding:0;  
+                  dt,
+                  dd {border-bottom:1px solid #333;}
+                }
+              }
+            }
+          }
+        }
+        .sub.sub24 {
+          display:none;
+          position:relative;
+          top:0;
+          left:0;
+          width:100%;
+          background:#232323;
+          .sub-gap {
+            padding:0 20px;
+             > ul {
+               > li {
+                 > a {
+                   > span {
+                      color:#fff;
+                      &::after {display:none;}
+                  }
+                }
+                .sub-sub {
+                  display:block;
+                  position:relative;
+                  top:0;
+                  right:0;
+                  width:100%;
+                  background:#232323;
+                  border-top:1px solid #333;
+                  .sub-gap {
+                    padding:0;
+                    ul {
+                      li {
+                        border-bottom:1px solid #333;
+                        a {
+                          span {
+                            color:#9d9d9d;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+
+  #wrap #header.show {
+    .container {
+      .gap {
+        .wrap {
+          #nav {
+            top:60px;
+            > ul {
+              > li {
+                .sub.sub1356 ,
+                .sub.sub24 {
+                  top:0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  #wrap #main #section2,
+  #wrap #main #section3 {
+    padding: 70px 0;   // 고정값으로 해놓는게 제일 깔끔함
+  }
+
+  #wrap #main #section2 .container .gap .wrap .content,
+  #wrap #main #section3 .container .gap .wrap .content {
+    padding: 50px 0 0 0;
+  }
+
+  #wrap #main #section2 .container .gap .wrap .title {
+    h3 {font-size:10px;}
+    h2 {
+      width:70%;
+      margin:0 auto;
+      font-size:22px;
+      br {
+        display:none;
+      }
+    }
+  }
+
+  #wrap #main #section2 .container .gap .wrap .content > ul {
+    display: flex;
+    flex-flow:row wrap;
+    > li {
+      width: 50%;
+      .col-gap {
+        margin:15px;
+      }
+    }
+  }
+
+  #wrap #main #section3 .container .gap .wrap .title {
+    h3 {font-size:10px;}
+    h2 {
+      width:70%;
+      margin:0 auto;
+      font-size:26px;
+      br {
+        display:none;
+      }
+    }
+  }
+
+  #wrap #main #section3 .container .gap .wrap .content > ul {
+    display: flex;
+    flex-flow:row wrap;
+    > li {
+      width: 50%;
+      .col-gap {
+        margin:15px;
+      }
+    }
+  }
+
+  #wrap #quickBox {
+    display:none;
+  }
+
+
+  #wrap #main #section5 .container .gap .wrap .content ul.svg-box {
+    flex-flow:row wrap;
+    li {
+      width: 50%;
+      .col-gap {
+        margin:25px 15px;
+      }
+    }
+  }
+
+  #wrap #main #section7 .container .gap .wrap .content  {
+    > ul {
+      flex-flow:row wrap;
+      > li {
+        width: 50%;
+        .col-gap {
+          margin:15px;
+        }
+      }
+    } 
+  }
+
+  #wrap #main #section10 .container .gap .wrap .content form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+  #wrap #footer .container .gap .wrap .content {
+    text-align:center;
+  }
+
+  #wrap #footer .container .gap .wrap .content .top ul {
+    flex-flow:row wrap;
+    li {
+      width: 100%;
+      .col-gap {
+        margin:15px;
+      }
+    }
+  }
+
+  #wrap #footer .container .gap .wrap .content .bottom ul {
+    flex-flow:row wrap;
+    li {
+      width: 100%;
+      &:nth-child(1) ,
+      &:nth-child(2) {text-align:center;}
+      .col-gap {
+        margin:30px;
+      }
+    }
+  }
+
+  #wrap #main #section9 .container .gap .wrap .content {
+    padding:50px 0 0 0;
+    > ul {
+      flex-flow:row wrap;
+      > li {
+        width: 50%;
+        .col-gap {
+          margin:15px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media all and (max-width:780px){
+  #wrap #main #section6 .container .gap .wrap .content {
+    > ul {
+      flex-flow:row wrap;
+      > li {
+        width: 100%;
+        .col-gap {
+          margin:5px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width:680px){
+  #wrap #main #section2 .container .gap .wrap .content > ul {
+    > li {
+      width: 100%;
+    }
+  }
+
+  #wrap #main #section4 .container .gap .wrap #nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #wrap #main #section8 .container .gap .wrap .content > ul {
+    > li {
+      &:nth-child(2) {
+        ul {
+          li {
+            text-align:center;
+            h2 {
+              font-size:30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #wrap #main #section9 .container .gap .wrap .title {
+    h3 {font-size:10px;}
+    h2 {font-size:24px;}
+  }
+
+}
+
+@media all and (max-width:500px){
+  #wrap #main #section2 .container .gap .wrap .title {
+    h3 {font-size:8px;}
+    h2 {
+      width:80%;
+      margin:0 auto;
+      font-size:16px;
+      line-height:130%;
+    }
+  }
+
+  #wrap #main #section3 .container .gap .wrap .title {
+    h3 {font-size:8px;}
+    h2 {
+      width:80%;
+      margin:0 auto;
+      font-size:20px;
+      line-height:130%;
+    }
+  }
+
+  #wrap #main #section3 .container .gap .wrap .content > ul {
+    > li {
+      width: 100%;
+    }
+  }
+
+  #wrap #main #section5 .container .gap .wrap .content ul.svg-box {
+    flex-flow:row wrap;
+    li {
+      width: 100%;
+      .col-gap {
+        margin:25px 15px;
+      }
+    }
+  }
+
+  #wrap #main #section6 .container .gap .wrap .content > ul > li .col-gap .col-wrap .caption ul li {
+    padding: 5px 0;
+    &:last-child {
+      padding-top: 4.5%;
+    }
+  }
+
+  #wrap #main #section7 .container .gap .wrap .title h2 {
+    font-size:22px;
+  }
+
+  #wrap #main #section7 .container .gap .wrap .content  {
+    > ul {
+      > li {
+        width: 100%;
+      }
+    } 
+  }
+
+  #wrap #main #section8 .container .gap .wrap .content > ul {
+    > li {
+      &:nth-child(2) {
+        ul {
+          li {
+            text-align:center;
+            h3 {
+              font-size:13px;
+              line-height:120%;
+            }
+            h2 {
+              font-size:24px;
+            }
+            p {font-size:11px;}
+          }
+        }
+      }
+    }
+  }
+
+  #wrap #main #section9 .container .gap .wrap .title {
+    h3 {font-size:8px;}
+    h2 {font-size:20px;}
+  }
+
+  #wrap #main #section9 .container .gap .wrap .content {
+    > ul {
+      > li {
+        width: 100%;
+      }
+    }
+  }
+
+  
+
+
+}
